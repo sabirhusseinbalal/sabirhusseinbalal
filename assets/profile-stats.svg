@@ -1,18 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="284" viewBox="0 0 900 284" role="img" aria-labelledby="title desc">
-<title id="title">GitHub public statistics for sabirhusseinbalal</title>
-<desc id="desc">Setup pending. Run the Update profile statistics GitHub Actions workflow to populate this card.</desc>
-<defs>
-  <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#101a2b"/><stop offset="100%" stop-color="#182b47"/></linearGradient>
-  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8bb9ff"/><stop offset="100%" stop-color="#b8a7ff"/></linearGradient>
-  <style>.heading{font:700 20px 'Segoe UI',Arial,sans-serif;letter-spacing:2px;fill:#edf4ff}.subheading{font:400 14px 'Segoe UI',Arial,sans-serif;fill:#9fb2cf}.footer{font:400 11px 'Segoe UI',Arial,sans-serif;fill:#8398b6;letter-spacing:.4px}</style>
-</defs>
-<rect x="1" y="1" width="898" height="282" rx="22" fill="url(#background)" stroke="#30496e" stroke-width="2"/>
-<circle cx="846" cy="46" r="23" fill="#243b5c" opacity=".9"/><circle cx="854" cy="38" r="19" fill="#182b47"/>
-<text x="30" y="46" class="heading">GITHUB AT A GLANCE</text>
-<text x="30" y="74" class="subheading">Your public repository snapshot is being prepared.</text>
-<rect x="30" y="91" width="90" height="3" rx="2" fill="url(#accent)"/>
-<rect x="30" y="116" width="840" height="96" rx="16" fill="#17243a" stroke="#2c4263"/>
-<text x="450" y="158" text-anchor="middle" class="heading" font-size="16">RUN THE “UPDATE PROFILE STATISTICS” WORKFLOW</text>
-<text x="450" y="184" text-anchor="middle" class="subheading">This placeholder will be replaced with live public repository metrics.</text>
-<text x="30" y="250" class="footer">PUBLIC REPOSITORY METRICS  •  AUTOMATIC DAILY UPDATE</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300" role="img" aria-labelledby="title desc">
+<title id="title">GitHub statistics for sabirhusseinbalal</title><desc id="desc">Public repositories, stars earned, followers and public repositories forked by this account. Updated 2026-11-04 UTC.</desc>
+<defs><linearGradient id="night" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#101827"/><stop offset="52%" stop-color="#24223d"/><stop offset="100%" stop-color="#342b4d"/></linearGradient><linearGradient id="moon" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fff0d5"/><stop offset="100%" stop-color="#c8b9ff"/></linearGradient><style>.heading{font:700 21px 'Segoe UI',Arial,sans-serif;letter-spacing:2.4px;fill:#f5f0ff}.subheading{font:400 12px 'Segoe UI',Arial,sans-serif;fill:#c0bad7;letter-spacing:.5px}.label{font:700 10px 'Segoe UI',Arial,sans-serif;letter-spacing:1.15px;fill:#bcb4d7}.value{font:700 39px 'Segoe UI',Arial,sans-serif;fill:#fff8ed}.footer{font:400 10px 'Segoe UI',Arial,sans-serif;fill:#aaa3c5;letter-spacing:.5px}</style></defs>
+<rect x="1" y="1" width="918" height="298" rx="23" fill="url(#night)" stroke="#625879" stroke-width="1.5"/>
+<circle cx="830" cy="49" r="25" fill="url(#moon)" opacity=".95"/><circle cx="841" cy="39" r="22" fill="#24223d"/>
+<g fill="#eee7ff" opacity=".8"><circle cx="777" cy="34" r="1.7"/><circle cx="875" cy="77" r="1.4"/><circle cx="737" cy="61" r="1.2"/><path d="M704 29l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M883 116l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z"/></g>
+<text x="30" y="47" class="heading">GITHUB AT A GLANCE</text><text x="30" y="70" class="subheading">A little snapshot of my GitHub journey · @sabirhusseinbalal</text><rect x="30" y="82" width="110" height="2.5" rx="2" fill="#c9b7ff"/>
+<g><rect x="28.0" y="112" width="205.5" height="124" rx="17" fill="#1b2038" fill-opacity=".92" stroke="#625879"/><text x="46.0" y="146" class="label">PUBLIC REPOS</text><text x="46.0" y="200" class="value">39</text></g><g><rect x="247.5" y="112" width="205.5" height="124" rx="17" fill="#1b2038" fill-opacity=".92" stroke="#625879"/><text x="265.5" y="146" class="label">STARS EARNED</text><text x="265.5" y="200" class="value">0</text></g><g><rect x="467.0" y="112" width="205.5" height="124" rx="17" fill="#1b2038" fill-opacity=".92" stroke="#625879"/><text x="485.0" y="146" class="label">FOLLOWERS</text><text x="485.0" y="200" class="value">0</text></g><g><rect x="686.5" y="112" width="205.5" height="124" rx="17" fill="#1b2038" fill-opacity=".92" stroke="#625879"/><text x="704.5" y="146" class="label">FORKS CREATED</text><text x="704.5" y="200" class="value">4</text></g>
+<text x="30" y="270" class="footer">LIVE PUBLIC GITHUB DATA  ·  UPDATED 2026-11-04 UTC</text><text x="890" y="270" text-anchor="end" class="footer">LITTLE BY LITTLE, ONE TRAVELS FAR</text></svg>
