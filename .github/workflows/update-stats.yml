@@ -45,3 +45,4 @@ jobs:
           git add assets/profile-stats.svg
           git commit -m "chore: update GitHub profile stats"
           git push
+
