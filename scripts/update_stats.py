@@ -141,12 +141,12 @@ def calculate_metrics(
     """
     original_repositories = [repo for repo in repositories if repo.get("fork") is not True]
     stars_earned = sum(safe_nonnegative_int(repo.get("stargazers_count")) for repo in original_repositories)
-    forks_created = sum(safe_nonnegative_int(repo.get("forks_count")) for repo in original_repositories)
+    forks_received = sum(safe_nonnegative_int(repo.get("forks_count")) for repo in original_repositories)
 
     return {
         "public_repositories": len(repositories),
         "stars_earned": stars_earned,
-        "forks_created": forks_created,
+        "forks_received": forks_received,
         "followers": None if followers is None else safe_nonnegative_int(followers),
     }
 
@@ -176,7 +176,7 @@ def render_svg(
     cards: list[tuple[str, int | None, str]] = [
         ("PUBLIC REPOSITORIES", metrics.get("public_repositories"), "folders"),
         ("STARS EARNED", metrics.get("stars_earned"), "star"),
-        ("FORKS CREATED", metrics.get("forks_created"), "fork"),
+        ("FORKS OF YOUR REPOS", metrics.get("forks_received"), "fork"),
     ]
     if show_followers:
         cards.append(("FOLLOWERS", metrics.get("followers"), "users"))
@@ -301,7 +301,7 @@ def main() -> int:
         print(f"Updated {OUTPUT_PATH.relative_to(ROOT_DIR)}")
         print(f"Public repositories: {metrics['public_repositories']}")
         print(f"Stars earned on original public repositories: {metrics['stars_earned']}")
-        print(f"Forks created from original public repositories: {metrics['forks_created']}")
+        print(f"Forks of original public repositories: {metrics['forks_received']}")
         if show_followers:
             print(f"Followers (display only): {metrics['followers']}")
         return 0
