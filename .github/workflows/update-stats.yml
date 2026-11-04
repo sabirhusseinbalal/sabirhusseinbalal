@@ -1,4 +1,4 @@
-name: Update GitHub profile statistics
+name: Update written GitHub profile statistics
 
 on:
   workflow_dispatch:
@@ -25,19 +25,23 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Count public GitHub statistics and generate the card
+      - name: Check the statistics script
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh the written statistics
         env:
           GITHUB_USERNAME: sabirhusseinbalal
+          GH_PROFILE_TOKEN: ${{ secrets.GH_PROFILE_TOKEN }}
         run: python scripts/update_stats.py
 
-      - name: Save the refreshed statistics card
+      - name: Save the refreshed profile README
         run: |
-          if git diff --quiet -- assets/profile-stats.svg; then
-            echo "Statistics card is already up to date."
+          if git diff --quiet -- README.md; then
+            echo "Statistics are already up to date."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/profile-stats.svg
-          git commit -m "chore: refresh GitHub profile statistics"
+          git add README.md
+          git commit -m "chore: refresh written GitHub profile statistics"
           git push
