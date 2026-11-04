@@ -1,10 +1,7 @@
 <div align="center">
-  <img src="animation.gif" width="100%" alt="Aesthetic Butterfly Banner">
+  <img src="animation.gif" width="100%" alt="Aesthetic butterfly banner" />
 </div>
 
 <p align="center">
-  <a href="https://github.com/sabirhusseinbalal?tab=repositories">
-    <img src="https://img.shields.io/badge/Explore-My_Projects-blue?style=for-the-badge&logo=github" alt="Explore my GitHub projects">
-  </a>
+  <img src="assets/profile-stats.svg" width="100%" alt="Live GitHub statistics: public repositories, stars earned, followers, and forks created" />
 </p>
-
