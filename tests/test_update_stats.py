@@ -32,13 +32,13 @@ class CalculateMetricsTests(unittest.TestCase):
         result = calculate_metrics(repos, followers=7)
         self.assertEqual(result["public_repositories"], 3)
         self.assertEqual(result["stars_earned"], 7)
-        self.assertEqual(result["forks_created"], 3)
+        self.assertEqual(result["forks_received"], 3)
         self.assertEqual(result["followers"], 7)
 
     def test_missing_or_invalid_counts_are_safe(self):
         result = calculate_metrics([{"fork": False, "stargazers_count": "bad"}])
         self.assertEqual(result["stars_earned"], 0)
-        self.assertEqual(result["forks_created"], 0)
+        self.assertEqual(result["forks_received"], 0)
         self.assertIsNone(result["followers"])
 
 
@@ -66,7 +66,7 @@ class SvgTests(unittest.TestCase):
         metrics = {
             "public_repositories": 39,
             "stars_earned": 12,
-            "forks_created": 2,
+            "forks_received": 2,
             "followers": None,
         }
         svg = render_svg(
@@ -79,14 +79,14 @@ class SvgTests(unittest.TestCase):
         self.assertIn("GITHUB AT A GLANCE", svg)
         self.assertIn("PUBLIC REPOSITORIES", svg)
         self.assertIn("STARS EARNED", svg)
-        self.assertIn("FORKS CREATED", svg)
+        self.assertIn("FORKS OF YOUR REPOS", svg)
         self.assertNotIn("FOLLOWERS</text>", svg)
 
     def test_can_render_follower_metric_when_explicitly_enabled(self):
         metrics = {
             "public_repositories": 1,
             "stars_earned": 0,
-            "forks_created": 0,
+            "forks_received": 0,
             "followers": 8,
         }
         svg = render_svg(
