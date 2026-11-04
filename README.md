@@ -14,7 +14,6 @@
 
 ✧ 🍴 **Forks created** · **4**
 
-<sub>little by little, one travels far. 🦋</sub>
 
 
 </div>
